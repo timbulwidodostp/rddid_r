@@ -1,14 +1,14 @@
 # Olah Data Semarang
 # WhatsApp : +6285227746673
 # IG : @olahdatasemarang_
-# Semiparametric Estimation of Stochastic Frontier Models Use semsfa With (In) R Software
-install.packages("semsfa")
-library("semsfa")
-# Estimation Semiparametric Estimation of Stochastic Frontier Models Use semsfa With (In) R Software
-semsfa = read.csv("https://raw.githubusercontent.com/timbulwidodostp/semsfa/main/semsfa/semsfa.csv",sep = ";")
-semsfa <- semsfa(y ~ s(x), semsfa, sem.method = "gam", ineffDecrease = FALSE)
-summary(semsfa)
-# Semiparametric Estimation of Stochastic Frontier Models Use semsfa With (In) R Software
+# Estimation of treatment effects in RDDID (Regression Discontinuity Difference in Differences) designs Use rddid With (In) R Software
+install.packages("remotes")
+remotes::install_github("dorleventer/rddid")
+library("rddid")
+# Estimation of treatment effects in RDDID (Regression Discontinuity Difference in Differences) designs Use rddid With (In) R Software
+rddid_r = read.csv("https://raw.githubusercontent.com/timbulwidodostp/rddid_r/main/rddid_r/rddid_r.csv",sep = ";")
+rddid::mult_period_est(df = rddid_r, t_star = 2, t_vec = 1, w_vec = 1, h = 600, b = 1200)
+# Estimation of treatment effects in RDDID (Regression Discontinuity Difference in Differences) designs Use rddid With (In) R Software
 # Olah Data Semarang
 # WhatsApp : +6285227746673
 # IG : @olahdatasemarang_
