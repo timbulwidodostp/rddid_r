@@ -1,6 +1,8 @@
 # rddid_r
 Estimation of treatment effects in RDDID (Regression Discontinuity Difference in Differences) designs Use rddid With (In) R Software
 
+https://www.youtube.com/watch?v=1Be6hS4_wHc
+
 Olah Data Semarang
 
 WA: +6285227746673 (085227746673)
